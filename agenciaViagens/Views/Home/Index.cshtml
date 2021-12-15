@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<main>
+
+    <!-- section pode ter várias dentro do main separando seções principais -->
+    <section class="banner-principal">
+        <h1>Viaje ;.)<br>o mundo!</h1>
+        <p>
+            Aqui voce encontra destinos exclusivos <br>para os lugares mais incríveis do mundo!.
+        </p>
+    </section>
+    <!-- section do conteudo principal -->
+    <section class="login-cadastro">
+        <div class="login-home">
+            <h4><img src="img/login-user-6.svg" alt="Login Usuário" width="20px"> Login</h4>
+            <p>para acessar seus orcamentos!</p>
+            <form action="#">
+                <label for="lemail"></label>
+                <input type="email" placeholder="E-mail:" id="lemail" name="femail"><br>
+                <label for="pass"></label>
+                <input type="password" placeholder="Senha:" id="pass" name="pass"><br>
+                <button>Entrar</button>
+            </form>
+        </div>
+        <div class="cadastro-home">
+            <h4>Cadastre-se</h4>
+            <p>cadastre e receba os melhores precos!</p>
+            <form action="#">
+                <label for="lnome"></label>
+                <input type="text" placeholder="Seu Nome:" id="lnome" name="fnome"><br>
+                <label for="lemail"></label>
+                <input type="email" placeholder="Seu E-mail:" id="lemail" name="femail"><br>
+                <label for="pass"></label>
+                <input type="password" placeholder="Sua Senha:" id="pass" name="pass"><br>
+                <button>Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="busque-destinos">
+            <h4>Destinos</h4>
+            <p>Simule os destinos mais procurados!</p>
+            <a href="#"><img src="/img/grecia.png" width="40px"></a>
+            <a href="#"><img src="/img/alemanha.png" width="40px"></a>
+            <a href="#"><img src="/img/gra-bretanha.png" width="40px"></a>
+            <a href="#"><img src="/img/franca.png" width="40px"></a>
+            <a href="/home/destinos"><button type="button">Consultar</button></a>
+        </div>
+
+    </section>
+
+
+    <!-- article mais indicado o conteudo central, mais usado para conteudo de blogs onde contem comentarios autor -->
+    <h2 class="destinos-alta">Destinos em Promoção!</h2>
+    <section class="article-home">
+        <article class="card-article">
+            <img src="img/grecia.png" alt="Bandeira Grécia" width="50px">
+            <h4>Grécia</h4>
+            <p>
+                A Grécia é um país do sudeste da Europa com milhares de ilhas espalhadas pelos mares Egeu e
+                Jônico. Bastante influente na antiguidade,
+                a nação é considerada o berço da civilização ocidental. Atenas, sua capital, conserva monumentos
+                como a Acrópole,
+                do século V a.C.
+            </p>
+            <a href="#">40% Off / Aproveite!</a>
+        </article>
+
+        <article class="card-article">
+            <img src="img/franca.png" alt="bandeira Inglaterra" width="50px">
+            <h4>Páris</h4>
+            <p>
+                Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda,
+                gastronomia e cultura. Sua paisagem urbana
+                do século XIX é cortada por avenidas largas e pelo rio Sena. A cidade é conhecida por monumentos
+                como a Torre Eiffel e a Catedral
+                de Notre-Dame
+            </p>
+            <a href="#">20% Off / Aproveite!</a>
+        </article>
+
+        <article class="card-article">
+            <img src="img/alemanha.png" alt="Bandeira Alemanha" width="50px">
+            <h4>Alemanha</h4>
+            <p>
+                A Alemanha é um país situado na Europa Ocidental com uma paisagem de florestas, rios,
+                cordilheiras e praias do Mar do Norte. A nação tem mais
+                de 2 milênios de história. Berlim, a capital, abriga cenários artísticos e de vida noturna, o
+                Portão de Brandemburgo
+                e muitos locais relacionados à Segunda Guerra Mundial.
+            </p>
+            <a href="#">10% Off / Aproveite!</a>
+        </article>
+    </section>
+
+
+</main>

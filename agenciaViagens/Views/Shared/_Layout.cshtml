@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" type="image/x-icon" href="~/img/favicon.svg">
+</head>
+<body>
+    <header>
+        <nav class="menu-superior">
+            <div class="logotipo">
+                <a asp-area="" asp-controller="Home" asp-action="index"><img src="~/img/logotipo-vuelo-dark.svg" alt="logotipo vuelo" width="120px"></a>
+            </div>
+
+            <!-- menu togler-->
+            <div class="menuToggle">
+                <input type="checkbox" />
+
+                <div class="hamburger">
+                    <span></span>
+                    <span class="middle"></span>
+                    <span></span>
+                    <span class="x-line"></span>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a asp-area="" asp-controller="Home" asp-action="index"><img src="~/img/logotipo-vuelo-dark.svg" alt="logotipo vuelo" width="120px"></a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="index">Home</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="destinos">Destinos</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="promocoes">Promoções</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-screen">
+                <ul>
+                    <li><a asp-area="" asp-controller="Home" asp-action="index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="destinos">Destinos</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="promocoes">Promoções</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="contato">Contato</a></li>
+                    <li><a href="#"><img src="~/img/login-user-6.svg" alt="Login Usuário" width="20px"> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+        <!-- aside pode ser um newslatter ou um nav dentro menu lateral -->
+        <aside class="card-news">
+            <h3>Chat online 24hrs!</h3>
+            <p>
+                Fale com um de nossos especialistas via chat 24hrs, ele te esclarecerá tudo sobre os destinos e como efetuar sua primeira compra!
+            </p>
+            <a href="/home/contato">Clique Aqui! ;)</a>
+        </aside>
+    </div>
+
+    <!-- footer é o rodapé  -->
+    <footer class="footer-base">
+        <img src="~/img/logotipo-vuelo-dark.svg" width="60px">
+        <p>Todos os direitos reservados 2022.</p>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
