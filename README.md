@@ -5,5 +5,7 @@
   - Css
   - Javascript
 </p>
-diagama neste Link
-https://github.com/thiagoalmeidas/VueloBootstrap/blob/master/Modelos%20-%20VueloAgencia.pdf
+<p>--> Diagama neste Link
+https://github.com/thiagoalmeidas/VueloBootstrap/blob/master/Modelos%20-%20VueloAgencia.pdf</p>
+
+<p>--> Parte 2 - https://github.com/thiagoalmeidas/VueloBootstrap</p>
