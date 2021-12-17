@@ -1,5 +1,5 @@
 # VueloBootstrap
-<h1>Trabalho de Atividade para Recode - Parte 2/2</h1>
+<h1>Trabalho de Atividade para Recode - Parte 1/2</h1>
 <p>Versão com:
   - Html
   - Css
